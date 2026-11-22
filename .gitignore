@@ -1,0 +1,18 @@
+# Large datasets (download separately)
+datasets/
+*.zip
+
+# MATLAB temp files
+*.autosave
+*.asv
+slprj/
+*.slxc
+
+# Python cache
+__pycache__/
+*.pyc
+# Live runs from dashboard_v2.py (recreated on every demo)
+live_dashboard/
+__pycache__/
+*.pyc
+workspace_backup.mat

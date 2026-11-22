@@ -1,0 +1,128 @@
+[check] seed-42 reproduction:
+      Mode    Case  SOC_RMSE  R0_final  SOH_final
+0     Eco   Fresh     0.074    10.000    100.000
+1     Eco  Static     0.118    10.000    100.000
+2     Eco   Gated     0.070    20.929     83.845
+3  Normal   Fresh     0.112    10.000    100.000
+4  Normal  Static     0.285    10.000    100.000
+5  Normal   Gated     0.175    19.942     82.689
+6   Sport   Fresh     0.507    10.000    100.000
+7   Sport  Static     2.034    10.000    100.000
+8   Sport   Gated     0.483    20.337     69.234
+[R1/R2/R4] 30 seeds ...
+Ageing   Mode          Case      SOC_RMSE       R0_final
+  ramp    Eco         Fresh 0.072 ± 0.005 10.126 ± 0.565
+  ramp    Eco Fresh-Ungated 0.070 ± 0.007 10.386 ± 1.204
+  ramp    Eco         Gated 0.088 ± 0.014 16.417 ± 3.781
+  ramp    Eco        Static 0.104 ± 0.007 10.000 ± 0.000
+  ramp    Eco       Ungated 0.074 ± 0.008 18.575 ± 1.330
+  ramp Normal         Fresh 0.118 ± 0.012  9.961 ± 0.215
+  ramp Normal Fresh-Ungated 0.119 ± 0.022  9.809 ± 0.993
+  ramp Normal         Gated 0.173 ± 0.029 14.591 ± 3.369
+  ramp Normal        Static 0.194 ± 0.009 10.000 ± 0.000
+  ramp Normal       Ungated 0.126 ± 0.019 18.216 ± 1.280
+  ramp  Sport         Fresh 0.540 ± 0.036 10.076 ± 0.156
+  ramp  Sport Fresh-Ungated 0.586 ± 0.062 10.561 ± 0.218
+  ramp  Sport         Gated 0.658 ± 0.074 17.086 ± 0.226
+  ramp  Sport        Static 1.274 ± 0.024 10.000 ± 0.000
+  ramp  Sport       Ungated 0.573 ± 0.029 17.424 ± 0.204
+  step    Eco         Fresh 0.072 ± 0.005 10.126 ± 0.565
+  step    Eco Fresh-Ungated 0.070 ± 0.007 10.386 ± 1.204
+  step    Eco         Gated 0.069 ± 0.011 20.301 ± 1.433
+  step    Eco        Static 0.116 ± 0.007 10.000 ± 0.000
+  step    Eco       Ungated 0.066 ± 0.008 20.430 ± 1.332
+  step Normal         Fresh 0.118 ± 0.012  9.961 ± 0.215
+  step Normal Fresh-Ungated 0.119 ± 0.022  9.809 ± 0.993
+  step Normal         Gated 0.205 ± 0.058 17.846 ± 4.292
+  step Normal        Static 0.282 ± 0.011 10.000 ± 0.000
+  step Normal       Ungated 0.147 ± 0.019 20.393 ± 1.269
+  step  Sport         Fresh 0.540 ± 0.036 10.076 ± 0.156
+  step  Sport Fresh-Ungated 0.586 ± 0.062 10.561 ± 0.218
+  step  Sport         Gated 0.552 ± 0.030 20.495 ± 0.195
+  step  Sport        Static 2.004 ± 0.026 10.000 ± 0.000
+  step  Sport       Ungated 0.557 ± 0.029 20.571 ± 0.198
+[R3] threshold sweep ...
+  Mode  Tau  FalseAlarmRate  DetectionRate  MedianDelay_s  SOC_RMSE
+   Eco  2.5           0.933          1.000           65.0     0.067
+   Eco  3.0           0.300          1.000          180.0     0.067
+   Eco  3.5           0.200          1.000          320.0     0.069
+   Eco  4.0           0.100          0.867          450.0     0.075
+   Eco  5.0           0.000          0.600          450.0     0.092
+Normal  2.5           0.700          1.000          165.0     0.152
+Normal  3.0           0.467          0.933          195.0     0.171
+Normal  3.5           0.167          0.833          200.0     0.205
+Normal  4.0           0.133          0.667         1220.0     0.235
+Normal  5.0           0.000          0.300         1240.0     0.264
+ Sport  2.5           0.900          1.000            0.0     0.551
+ Sport  3.0           0.633          1.000            0.0     0.552
+ Sport  3.5           0.300          1.000            0.0     0.552
+ Sport  4.0           0.133          1.000            0.0     0.552
+ Sport  5.0           0.000          1.000            0.0     0.552
+[R5] table plant, chained cycles ...
+  Mode  V_RMSE_V  V_MaxErr_V  FinalSOC_plant  FinalSOC_simulink  T_end_degC
+   Eco    0.0005      0.0009         98.2008            98.2005     25.0216
+Normal    0.0005      0.0009         95.9436            95.9431     25.0635
+ Sport    0.0022      0.0045         85.0014            84.9966     26.0435
+Ageing Detector   Mode          Case      SOC_RMSE    SOC_MaxErr     Flags_pre       Flags_post       R0_final       Q_final       SOH_final
+  none   V only    Eco         Fresh 0.707 ± 0.008 1.317 ± 0.024 0.000 ± 0.000    1.100 ± 2.468 10.185 ± 0.782 4.564 ± 0.225  96.011 ± 7.216
+  none   V only    Eco Fresh-Ungated 0.712 ± 0.008 1.357 ± 0.035 0.000 ± 0.000    1.167 ± 2.183 10.689 ± 1.039 4.863 ± 0.045  71.067 ± 1.943
+  none   V only Normal         Fresh 0.486 ± 0.017 1.276 ± 0.032 0.000 ± 0.000    1.533 ± 2.529 10.210 ± 0.809 4.621 ± 0.163  96.180 ± 4.682
+  none   V only Normal Fresh-Ungated 0.487 ± 0.028 1.243 ± 0.082 0.000 ± 0.000    1.933 ± 2.703 10.238 ± 0.931 4.754 ± 0.031  85.659 ± 3.525
+  none   V only  Sport         Fresh 0.364 ± 0.040 1.196 ± 0.034 0.000 ± 0.000    0.967 ± 1.159  8.546 ± 1.227 4.496 ± 0.030  98.161 ± 2.906
+  none   V only  Sport Fresh-Ungated 0.302 ± 0.014 1.178 ± 0.056 0.000 ± 0.000    0.500 ± 0.820  7.463 ± 0.165 4.522 ± 0.007  96.876 ± 0.598
+  none      V+T    Eco         Fresh 0.706 ± 0.008 1.318 ± 0.026 0.000 ± 0.000    6.033 ± 7.748 10.536 ± 0.961 4.622 ± 0.378  91.121 ± 8.062
+  none      V+T Normal         Fresh 0.489 ± 0.022 1.278 ± 0.048 0.033 ± 0.183  35.800 ± 31.057 10.250 ± 0.937 4.766 ± 0.157  91.500 ± 3.025
+  none      V+T  Sport         Fresh 0.312 ± 0.015 1.194 ± 0.036 0.033 ± 0.183  653.467 ± 9.522  7.456 ± 0.165 4.509 ± 0.008  95.680 ± 3.761
+  ramp   V only    Eco         Gated 0.715 ± 0.024 1.357 ± 0.052 0.000 ± 0.000    2.433 ± 3.711 22.254 ± 2.549 4.038 ± 0.432  74.369 ± 8.299
+  ramp   V only    Eco        Static 0.802 ± 0.008 1.406 ± 0.068 0.000 ± 0.000  13.333 ± 11.763 10.000 ± 0.000 4.493 ± 0.000 100.000 ± 0.000
+  ramp   V only    Eco       Ungated 0.704 ± 0.010 1.357 ± 0.034 0.000 ± 0.000    1.767 ± 2.861 22.671 ± 1.074 4.338 ± 0.037  64.397 ± 1.679
+  ramp   V only Normal         Gated 0.585 ± 0.092 1.352 ± 0.099 0.033 ± 0.183    2.433 ± 3.830 19.510 ± 4.164 4.230 ± 0.220  81.967 ± 8.210
+  ramp   V only Normal        Static 0.690 ± 0.010 1.415 ± 0.081 0.033 ± 0.183    7.200 ± 7.993 10.000 ± 0.000 4.493 ± 0.000 100.000 ± 0.000
+  ramp   V only Normal       Ungated 0.478 ± 0.024 1.220 ± 0.072 0.033 ± 0.183    2.167 ± 4.292 21.659 ± 0.880 4.273 ± 0.022  79.787 ± 0.786
+  ramp   V only  Sport         Gated 0.404 ± 0.048 1.454 ± 0.151 0.000 ± 0.000    1.733 ± 1.337 15.085 ± 0.166 3.953 ± 0.049  81.470 ± 0.773
+  ramp   V only  Sport        Static 0.683 ± 0.008 1.526 ± 0.081 0.000 ± 0.000  26.000 ± 14.697 10.000 ± 0.000 4.493 ± 0.000 100.000 ± 0.000
+  ramp   V only  Sport       Ungated 0.326 ± 0.017 1.225 ± 0.060 0.000 ± 0.000    0.733 ± 1.530 15.143 ± 0.167 4.045 ± 0.006  82.839 ± 0.211
+  step   V only    Eco         Gated 0.651 ± 0.012 1.302 ± 0.059 0.000 ± 0.000    2.033 ± 1.542 23.319 ± 0.836 4.012 ± 0.093  67.227 ± 8.521
+  step   V only    Eco        Static 0.838 ± 0.007 1.537 ± 0.054 0.000 ± 0.000  33.433 ± 18.256 10.000 ± 0.000 4.493 ± 0.000 100.000 ± 0.000
+  step   V only    Eco       Ungated 0.658 ± 0.006 1.335 ± 0.031 0.033 ± 0.183    1.733 ± 2.273 23.312 ± 0.838 3.857 ± 0.037  49.601 ± 0.815
+  step   V only Normal         Gated 0.558 ± 0.116 1.538 ± 0.279 0.000 ± 0.000    2.333 ± 1.807 21.997 ± 1.061 3.714 ± 0.045  70.227 ± 1.282
+  step   V only Normal        Static 0.936 ± 0.008 2.075 ± 0.086 0.000 ± 0.000  17.200 ± 12.441 10.000 ± 0.000 4.493 ± 0.000 100.000 ± 0.000
+  step   V only Normal       Ungated 0.473 ± 0.022 1.255 ± 0.060 0.033 ± 0.183    1.267 ± 2.227 22.001 ± 1.056 3.725 ± 0.016  69.486 ± 0.951
+  step   V only  Sport         Gated 0.582 ± 0.015 2.568 ± 0.098 0.000 ± 0.000   16.967 ± 8.962 21.943 ± 0.139 3.602 ± 0.003  69.602 ± 0.099
+  step   V only  Sport        Static 1.855 ± 0.008 6.183 ± 0.103 0.000 ± 0.000 149.867 ± 37.343 10.000 ± 0.000 4.493 ± 0.000 100.000 ± 0.000
+  step   V only  Sport       Ungated 0.587 ± 0.018 2.585 ± 0.117 0.000 ± 0.000   15.533 ± 7.664 21.951 ± 0.138 3.610 ± 0.003  69.733 ± 0.096
+  Mode Detector  FalseAlarmRate  MeanFlags
+   Eco   V only        0.333333   1.100000
+   Eco      V+T        0.666667   6.033333
+Normal   V only        0.466667   1.533333
+Normal      V+T        1.000000  35.800000
+ Sport   V only        0.600000   0.966667
+ Sport      V+T        1.000000 653.466667
+  Mode Ageing  SOC_start  SOC_end  T_end  R0_true_end_mOhm  Q_true_end
+   Eco   step      100.0   90.966 25.191            24.726       3.594
+   Eco   ramp      100.0   91.905 25.145            24.671       3.594
+Normal   step      100.0   79.486 25.537            22.693       3.594
+Normal   ramp      100.0   81.622 25.413            23.119       3.594
+ Sport   step      100.0   19.169 33.145            29.337       3.594
+ Sport   ramp      100.0   28.765 30.845            16.905       3.594
+Ageing   Mode  w_Q  w_R  SOH_est  SOH_true
+  ramp    Eco  0.5  0.5    67.40      65.0
+  ramp    Eco  0.7  0.3    76.39      71.0
+  ramp    Eco  0.9  0.1    85.38      77.0
+  ramp Normal  0.5  0.5    72.70      65.0
+  ramp Normal  0.7  0.3    81.28      71.0
+  ramp Normal  0.9  0.1    89.86      77.0
+  ramp  Sport  0.5  0.5    77.13      65.0
+  ramp  Sport  0.7  0.3    81.47      71.0
+  ramp  Sport  0.9  0.1    85.80      77.0
+  step    Eco  0.5  0.5    66.09      65.0
+  step    Eco  0.7  0.3    75.37      71.0
+  step    Eco  0.9  0.1    84.65      77.0
+  step Normal  0.5  0.5    64.06      65.0
+  step Normal  0.7  0.3    71.50      71.0
+  step Normal  0.9  0.1    78.94      77.0
+  step  Sport  0.5  0.5    62.87      65.0
+  step  Sport  0.7  0.3    69.79      71.0
+  step  Sport  0.9  0.1    76.70      77.0
+
+Done. Results in ./bms/results/robustness

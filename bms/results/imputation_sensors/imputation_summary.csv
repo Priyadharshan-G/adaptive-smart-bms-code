@@ -1,0 +1,5 @@
+Pattern,Channel,Linear,KNN,KNN+context,Hybrid,Best,Hybrid_vs_Linear_%
+burst,Current_A,8.4111,13.7462,10.842,10.842,Linear,-28.9
+burst,Voltage_V,0.3223,2.4571,1.6965,0.3223,Linear,0.0
+random,Current_A,5.3597,12.0066,6.3426,5.4878,Linear,-2.4
+random,Voltage_V,0.1987,2.4392,0.5146,0.1987,Linear,0.0

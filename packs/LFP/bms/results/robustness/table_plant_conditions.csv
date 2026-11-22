@@ -1,0 +1,7 @@
+Mode,Ageing,SOC_start,SOC_end,T_end,R0_true_end_mOhm,Q_true_end
+Eco,step,100.0,90.171,25.0,30.11,1.873
+Eco,ramp,100.0,91.205,25.0,29.304,1.873
+Normal,step,100.0,77.556,25.0,31.88,1.873
+Normal,ramp,100.0,79.884,25.0,32.091,1.873
+Sport,step,100.0,16.074,25.0,27.532,1.873
+Sport,ramp,100.0,25.262,25.0,26.571,1.873

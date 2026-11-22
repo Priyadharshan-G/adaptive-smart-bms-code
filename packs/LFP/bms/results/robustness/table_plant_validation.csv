@@ -1,0 +1,4 @@
+Mode,V_RMSE_V,V_MaxErr_V,FinalSOC_plant,FinalSOC_simulink,T_end_degC
+Eco,0.1555,0.5658,98.135,98.1323,25.0
+Normal,0.0814,0.6057,95.6648,95.6612,25.0
+Sport,0.4574,2.4348,83.6123,83.5947,25.0

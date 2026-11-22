@@ -1,0 +1,7 @@
+Mode,Detector,FalseAlarmRate,MeanFlags
+Eco,V only,1.0,47.233333333333334
+Eco,V+T,1.0,70.33333333333333
+Normal,V only,1.0,25.9
+Normal,V+T,1.0,41.36666666666667
+Sport,V only,0.8333333333333334,22.3
+Sport,V+T,0.9333333333333333,33.2

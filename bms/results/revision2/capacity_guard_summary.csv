@@ -1,0 +1,28 @@
+Config,Ageing,Mode,Q_err_pct,Q_err_sd,SOH,SOC_RMSE
+baseline,none,Eco,1.449,6.569,92.907,0.709
+baseline,none,Normal,3.531,3.808,94.944,0.477
+baseline,none,Sport,0.008,0.63,97.497,0.349
+baseline,ramp,Eco,15.089,12.143,74.581,0.718
+baseline,ramp,Normal,15.795,6.67,80.114,0.58
+baseline,ramp,Sport,9.679,2.304,81.325,0.407
+baseline,step,Eco,12.29,1.759,67.462,0.648
+baseline,step,Normal,3.279,0.926,70.195,0.545
+baseline,step,Sport,0.15,0.092,69.611,0.579
+span 10%,none,Eco,0.0,0.0,96.425,0.709
+span 10%,none,Normal,2.62,3.125,95.335,0.476
+span 10%,none,Sport,0.059,0.426,98.689,0.349
+span 10%,ramp,Eco,25.0,0.0,82.735,0.717
+span 10%,ramp,Normal,20.819,4.18,82.888,0.58
+span 10%,ramp,Sport,9.729,2.139,81.342,0.406
+span 10%,step,Eco,25.0,0.0,81.608,0.646
+span 10%,step,Normal,3.688,1.299,70.928,0.547
+span 10%,step,Sport,0.15,0.092,69.611,0.577
+span 10% + forget,none,Eco,0.0,0.0,96.425,0.709
+span 10% + forget,none,Normal,1.967,2.476,95.336,0.476
+span 10% + forget,none,Sport,-0.254,0.425,98.716,0.349
+span 10% + forget,ramp,Eco,25.0,0.0,82.735,0.717
+span 10% + forget,ramp,Normal,18.673,6.07,81.769,0.58
+span 10% + forget,ramp,Sport,5.007,0.587,78.798,0.407
+span 10% + forget,step,Eco,25.0,0.0,81.608,0.646
+span 10% + forget,step,Normal,1.772,1.492,70.167,0.547
+span 10% + forget,step,Sport,-0.114,0.203,69.445,0.577

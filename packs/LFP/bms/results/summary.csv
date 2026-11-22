@@ -1,0 +1,10 @@
+Mode,Case,SOC_RMSE_pct,SOC_MaxErr_pct,Drifts_before_300s,Drifts_after_300s,Detection_delay_s,Final_R0_est_mOhm,Final_Q_est_Ah,Final_SOH_pct
+Eco,Fresh,0.024,0.087,0,2,,14.91,2.341,99.3
+Eco,Aged-static,0.03,0.127,0,6,460.0,15.0,2.341,100.0
+Eco,Aged-adaptive,0.03,0.122,0,7,460.0,27.11,2.341,85.5
+Normal,Fresh,0.077,0.37,0,5,,11.11,2.341,80.7
+Normal,Aged-static,0.144,0.45,0,42,10.0,15.0,2.341,100.0
+Normal,Aged-adaptive,0.125,0.424,0,41,10.0,27.95,1.851,69.7
+Sport,Fresh,0.719,2.472,0,2,,14.09,1.24,67.1
+Sport,Aged-static,41.411,83.367,0,17,180.0,15.0,2.341,100.0
+Sport,Aged-adaptive,7.639,23.766,0,2,180.0,27.29,1.184,51.9
